@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  
+
 result = WIN_COMBINATIONS.select do |win_combo|
   win1 = win_combo[0]
   win2 = win_combo[1]
