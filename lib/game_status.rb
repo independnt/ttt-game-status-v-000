@@ -48,8 +48,10 @@ end
 
 def winner(board)
 result = won?(board)
-if board[result[0]] == "X" && board[result[1]] && board[result[2]]
+if board[result[0]] == "X" && board[result[1]] == "X" && board[result[2]] == "X"
   "X"
+elsif board[result[0]] == "O" && board[result[1]] == "O" && board[result[2]] == "O"
+  "O"
+else nil
 end
-nil
 end
