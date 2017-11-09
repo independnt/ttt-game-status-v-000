@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-WIN_COMBINATIONS.each do |win_combo|
+WIN_COMBINATIONS.select do |win_combo|
   win1 = win_combo[0]
   win2 = win_combo[1]
   win3 = win_combo[2]
@@ -25,9 +25,5 @@ WIN_COMBINATIONS.each do |win_combo|
   position_2 = board[win2]
   position_3 = board[win3]
 
-  if position_1 == "X" && position_2 == "X" && position_3 == "X"
-    return [win1, win2, win3]
-  else false
-  end
-end
+  position_1 == "X" && position_2 == "X" && position_3 "X"
 end
