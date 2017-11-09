@@ -32,7 +32,7 @@ WIN_COMBINATIONS.detect do |win_combo|
 end
 
 def full(board)
-board.detect do |spaces|
-  spaces = " " || spaces = ""
+board.any do |spaces|
+  spaces != " " || spaces != ""
 end
 end
