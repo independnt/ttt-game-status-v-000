@@ -48,7 +48,7 @@ def over?(board)
 end
 
 def winner(board)
-if board[won?(board)] == ["X", "X", "X"]
+if won?(board)[0] == "X" && won?(board)[1] == "X" won?(board)[2] == "X"
   "X"
 elsif board[won?(board)] == ["O", "O", "O"]
   "O"
