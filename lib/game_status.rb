@@ -50,5 +50,6 @@ def winner(board)
 result = won?(board)
 if board[result[0]] == "X" && board[result[1]] && board[result[2]]
   "X"
+end
 nil
 end
