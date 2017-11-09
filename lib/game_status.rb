@@ -17,9 +17,11 @@ WIN_COMBINATIONS = [
 
 def won?(board)
 WIN_COMBINATIONS.each do |iteration|
-  if iteration[0] == "X" && iteration[1] == "X" && iteration[2] == "X"
-    iteration
-  else false
+  iteration.each do |move|
+    if move[0] == "X" && move == "X" && move == "X"
+      move
+    else false
+    end
   end
 end
 end
