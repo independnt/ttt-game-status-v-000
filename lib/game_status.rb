@@ -26,7 +26,7 @@ WIN_COMBINATIONS.each do |win_combo|
   position_3 = board[win3]
 
   if position_1 == "X" && position_2 == "X" && position_3 == "X"
-    return win_combo
+    return [win1, win2, win3]
   else false
   end
 end
