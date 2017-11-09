@@ -48,10 +48,5 @@ end
 
 def winner(board)
 result = won?(board)
-if result[0] == "X" && result[1] == "X" && result[2] == "X"
-  puts "X"
-elsif result[0] == "O" && result[1] == "O" && result[2] == "O"
-  puts "O"
-else nil
-end
+puts result
 end
