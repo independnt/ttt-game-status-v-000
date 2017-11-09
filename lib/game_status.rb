@@ -31,6 +31,6 @@ WIN_COMBINATIONS.detect do |win_combo|
   end
 end
 
-def full(board)
-board.include?(" ")
+def full?(board)
+!board.include?()
 end
