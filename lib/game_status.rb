@@ -50,10 +50,7 @@ end
 def winner(board)
 result = won?(board)
 binding.pry
-if board[result[0]] == "X"
-  "X"
-elsif board[result[0]] == "O" 
-  "O"
-else nil
+if result
+  board[result[0]] 
 end
 end
