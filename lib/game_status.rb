@@ -22,3 +22,4 @@ WIN_COMBINATIONS.each do |iteration|
   else false
   end
 end
+end
