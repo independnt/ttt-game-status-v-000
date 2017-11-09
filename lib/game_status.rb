@@ -25,6 +25,5 @@ WIN_COMBINATIONS.select do |win_combo|
   position_2 = board[win2]
   position_3 = board[win3]
 
-  position_1 == "X" && position_2 == "X" && position_3 "X"
-end
+  position_1 == "X" && position_2 == "X" && position_3 == "X" || position_1 == "O" && position_2 == "O" && position_3 == "O"
 end
