@@ -47,6 +47,5 @@ def over?(board)
 end
 
 def winner(board)
-result = won?(board)
-puts result
+print result = won?(board)
 end
