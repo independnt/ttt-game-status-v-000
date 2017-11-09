@@ -40,3 +40,7 @@ if !won?(board) && full?(board)
   true
 end
 end
+
+def over?(board)
+
+end
