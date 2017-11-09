@@ -51,3 +51,4 @@ result = won?(board)
 if board[result[0]] == "X" && board[result[1]] == "X" && board[result[2]] == "X"
   "X"
 end
+end
