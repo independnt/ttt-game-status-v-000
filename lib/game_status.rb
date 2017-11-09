@@ -33,6 +33,6 @@ end
 
 def full(board)
 board.detect do |spaces|
-  spaces = " " || spaces = "" 
+  spaces = " " || spaces = ""
 end
 end
