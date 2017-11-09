@@ -47,7 +47,11 @@ def over?(board)
 end
 
 def winner(board)
-if won?(board) == ["X","X","X"]
+result = won?(board)
+if result[0] == "X" && result[1] == "X" && result[2] == "X"
   "X"
+elsif result[0] == "O" && result[1] == "O" && result[2] == "O"
+  "O"
+else nil
 end
 end
